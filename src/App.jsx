@@ -103,7 +103,7 @@ function App() {
       </div>
       <div className="body-container">
         <TodoList
-          todos={todos.filter(todo => todo.title.toLowerCase().includes(searchInput))}
+          todos={todos.filter(todo => todo.title.toLowerCase().includes(searchInput.toLowerCase()))}
           toggleComplete={toggleComplete}
           toggleEditing={toggleEditing}
           updateTodo={updateTodo}
