@@ -24,7 +24,10 @@ function App() {
   const toggleAddition = e => (e ? setShowToAdd(showToAdd => !showToAdd) : showToAdd)
 
   const toggleSearch = e => (e ? setShowToSearch(showToSearch => !showToSearch) : showToSearch)
-  const toggleEndSearch = e => (e ? setShowToSearch(showToSearch => !showToSearch) : showToSearch)
+  const toggleEndSearch = e => {
+    e ? setShowToSearch(showToSearch => !showToSearch) : showToSearch
+    setSearchInput('')
+  }
 
   const searchTodos = input => setSearchInput(input)
 

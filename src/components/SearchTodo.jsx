@@ -1,5 +1,5 @@
 import { MdClose } from 'react-icons/md'
-function SearchTodo({ toggleEndSearch, searchTodos, showToAdd }) {
+function SearchTodo({ toggleEndSearch, searchTodos }) {
   return (
     <div className="search-form">
       <input
